@@ -1,0 +1,31 @@
+/*  Постоянные  клиенты */
+
+.clients {
+  display: inline-flex;
+  align-items: center;
+}
+
+.clients li {
+  &:not(:nth-last-child(-n + 1)) {
+    margin-right: 30px;
+  }
+}
+.clients__icon {
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+
+  fill: $social-icons-color;
+  border: 1px solid $social-icons-color;
+  border-radius: 4px;
+
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: $accent-color;
+    border: 1px solid $accent-color;
+    cursor: pointer;
+  }
+}

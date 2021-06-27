@@ -1,0 +1,156 @@
+/* Подвал */
+
+.footer {
+  background-color: $primary-second-bg-color;
+
+  &__contacts {
+    width: 231px;
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: $primary-bg-color;
+  }
+  &__address {
+    margin-top: 0;
+    margin-bottom: 9px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+  }
+}
+
+.footer__link {
+  color: $footer-contact-link;
+
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.footer__join {
+  margin-top: 12px;
+  margin-left: 70px;
+}
+.footer__join-bg {
+  @include font();
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-bg-color;
+}
+.footer__social-icons {
+  @extend %placeholders;
+
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  & li:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  & li {
+    @extend %placeholders;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: $primary-bg-color;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    fill: currentColor;
+
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  & li:hover {
+    width: 44px;
+    height: 44px;
+    background-color: $accent-color;
+    cursor: pointer;
+  }
+}
+
+.footer__subscription {
+  margin-left: 93px;
+  margin-top: 12px;
+
+  @include font();
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $primary-bg-color;
+}
+.subscription__form {
+  display: flex;
+
+  width: 570px;
+  height: 86px;
+}
+
+.subscription__mail {
+  width: 358px;
+  height: 50px;
+  background-color: $primary-second-bg-color;
+  margin-top: 20px;
+  margin-right: 12px;
+
+  color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+
+  border-radius: 4px;
+  outline: none;
+
+  &::placeholder {
+    padding-left: 16px;
+    padding-top: 15px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  }
+}
+.subscription__btn {
+  position: relative;
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+
+  padding-right: 62px;
+  padding-left: 29px;
+  border: 0px solid transparent;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: $primary-bg-color;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &::after {
+    background-image: url(../images/modal-icon/icon-send.svg);
+
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    content: '';
+    top: 13px;
+    right: 28px;
+    fill: $primary-bg-color;
+  }
+  &:hover {
+    background-color: $hero-button-hover-color;
+  }
+}

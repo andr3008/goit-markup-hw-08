@@ -1,0 +1,25 @@
+/* Чем мы занимаемся */
+
+.we-do__section {
+  @extend %placeholders;
+  position: relative;
+}
+
+.we-do__text {
+  @extend %placeholders;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+
+  margin: 0;
+  width: 370px;
+  height: 70px;
+  @include font();
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-bg-color;
+  background-color: $we-do-text-position;
+}
+.we-do__item:nth-child(n + 2) {
+  margin-left: 30px;
+}
