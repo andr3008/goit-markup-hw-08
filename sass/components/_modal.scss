@@ -69,8 +69,8 @@
   color: $color-studio;
 }
 .form {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
 
   &__label {
     text-align: left;
@@ -87,7 +87,7 @@
 }
 .form__wrap {
   position: relative;
-  display: block;
+  // display: block;
   margin-top: 4px;
 }
 
@@ -104,7 +104,7 @@
 }
 
 .form__icon {
-  @extend %placeholders;
+  // @extend %placeholders;
   align-items: center;
   position: absolute;
   top: 50%;
@@ -122,7 +122,7 @@
 
 .input__comment {
   text-align: left;
-  display: block;
+  // display: block;
 
   font-size: 12px;
   line-height: 1.16;
@@ -158,13 +158,13 @@
   }
 }
 .checkbox {
-  @extend %placeholders;
+  // @extend %placeholders;
   align-items: center;
   margin-bottom: 30px;
   cursor: pointer;
 }
 .checkbox__label {
-  display: inline-block;
+  // display: inline-block;
 
   font-size: 12px;
   line-height: 1.16;
@@ -189,7 +189,7 @@
   }
 }
 .checkbox__icon {
-  display: inline-block;
+  // display: inline-block;
 
   width: 16px;
   height: 15px;
@@ -202,7 +202,7 @@
 }
 
 .checkbox__text {
-  display: inline-block;
+  // display: inline-block;
   padding-left: 7px;
 
   font-size: 14px;
@@ -216,7 +216,7 @@
 }
 
 .submit-btn {
-  display: block;
+  // display: block;
   margin-left: auto;
   margin-right: auto;
 

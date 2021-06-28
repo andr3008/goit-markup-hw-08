@@ -8,7 +8,7 @@
   }
 
   &__logo {
-    display: inline-block;
+    // display: inline-block;
     margin-bottom: 20px;
     color: $primary-bg-color;
   }
@@ -48,7 +48,7 @@
   color: $primary-bg-color;
 }
 .footer__social-icons {
-  @extend %placeholders;
+  // @extend %placeholders;
 
   margin-top: 20px;
   margin-bottom: 40px;
@@ -58,7 +58,7 @@
   }
 
   & li {
-    @extend %placeholders;
+    // @extend %placeholders;
     align-items: center;
     width: 44px;
     height: 44px;
@@ -90,7 +90,7 @@
   color: $primary-bg-color;
 }
 .subscription__form {
-  display: flex;
+  // display: flex;
 
   width: 570px;
   height: 86px;

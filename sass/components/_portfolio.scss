@@ -10,7 +10,7 @@
 /* Кнопки */
 
 .filter__block {
-  @extend %placeholders;
+  // @extend %placeholders;
   padding-bottom: 50px;
 
   & .filter__button {
@@ -49,8 +49,8 @@
 /* Проекты  */
 
 .projects {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
 
   &__item {
     width: 370px;
@@ -100,7 +100,7 @@
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  @extend %placeholders;
+  // @extend %placeholders;
 
   width: 322px;
   height: 168px;
