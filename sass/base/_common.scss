@@ -6,6 +6,12 @@ body {
   font-style: normal;
   letter-spacing: 0.03em;
 }
+@media (min-width: 320px) {
+  body {
+    overflow-x: hidden;
+    background-color: tomato;
+  }
+}
 
 .list {
   list-style: none;

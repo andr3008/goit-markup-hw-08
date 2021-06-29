@@ -1,48 +1,19 @@
 /* Шапка */
 .header {
   border-bottom: 1px solid $header-border-color;
-  position: relative;
 
   &__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 60px;
+    // display: flex;
+    // align-items: center;
   }
 
   &__logo {
     color: $color-studio;
   }
 }
-.menu__button {
-  display: inline-block;
-  margin-top: 10px;
-  margin-right: 15px;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-.menu__button .icon__close {
-  display: none;
-}
-.menu__button.is-open .icon__close {
-  display: block;
-}
-.menu__button.is-open .icon__menu {
-  display: none;
-}
-.menu__container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: yellow;
-  padding: 20px;
-}
 /* Навигация */
 .site-nav {
-  display: flex;
+  //   display: flex;
   margin-left: 93px;
 
   &__item:nth-child(n + 2) {
@@ -50,7 +21,7 @@
   }
 }
 .site-nav__link {
-  display: block;
+  //   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   color: $secondary-text-color;
@@ -78,7 +49,7 @@
     position: absolute;
     left: 0;
     bottom: -1px;
-    display: block;
+    // display: block;
     background-color: $accent-color;
     border-radius: 2px;
     width: 100%;
@@ -87,7 +58,7 @@
 }
 /* Контакты */
 .contact {
-  display: flex;
+  //   display: flex;
   margin-left: auto;
 
   &__item:not(last child) {
@@ -95,8 +66,8 @@
   }
 }
 .contact__link {
-  display: flex;
-  align-items: center;
+  //   display: flex;
+  //   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   color: $primary-text-color;
