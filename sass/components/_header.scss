@@ -1,15 +1,34 @@
 /* Шапка */
 .header {
   border-bottom: 1px solid $header-border-color;
+  background-color: brown;
 
   &__container {
-    // display: flex;
-    // align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 80px;
   }
 
   &__logo {
     color: $color-studio;
   }
+}
+.menu__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.menu__button .icon__close {
+  display: none;
+}
+.menu__button.is-open .icon__close {
+  display: block;
+}
+.menu__button.is-open .icon__menu {
+  display: none;
 }
 /* Навигация */
 .site-nav {

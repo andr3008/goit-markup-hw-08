@@ -10,15 +10,36 @@
   clip: rect(0 0 0 0);
 }
 
-.team__icon, .team__icon li, .footer__social-icons, .footer__social-icons li {
+.we-do__section, .we-do__text, .team__icon, .team__icon li, .footer__social-icons, .footer__social-icons li {
   display: flex;
   justify-content: center;
 }
 
 .container {
+  min-width: 320px;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    background-color: yellow;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
@@ -54,13 +75,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-@media (min-width: 320px) {
-  body {
-    overflow-x: hidden;
-    background-color: tomato;
-  }
-}
-
 .list {
   list-style: none;
   padding: 0;
@@ -90,10 +104,38 @@ img {
 /* Шапка */
 .header {
   border-bottom: 1px solid #ececec;
+  background-color: brown;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 80px;
 }
 
 .header__logo {
   color: #000;
+}
+
+.menu__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu__button .icon__close {
+  display: none;
+}
+
+.menu__button.is-open .icon__close {
+  display: block;
+}
+
+.menu__button.is-open .icon__menu {
+  display: none;
 }
 
 /* Навигация */
@@ -180,7 +222,6 @@ img {
 
 /* Герой */
 .hero {
-  max-width: 1600px;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -281,6 +322,56 @@ img {
 }
 
 /* Чем мы занимаемся */
+.we-do__section {
+  position: relative;
+}
+
+@media screen and (max-width: 1199px) {
+  .we-do__section {
+    display: none;
+  }
+}
+
+.we-do__text {
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  margin: 0;
+  width: 370px;
+  height: 70px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.we-do__item:nth-child(n + 2) {
+  margin-left: 30px;
+}
+
+.we-do__title {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1199px) {
+  .we-do__title {
+    display: none;
+  }
+}
+
 /* Наша команда  */
 .our-team-bg-color {
   background: #f5f4fa;
@@ -344,10 +435,12 @@ img {
 .clients {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: -15px;
 }
 
 .clients__icon {
+  flex-basis: calc((100% - 4 * 15px) / 2);
   margin: 15px;
   width: 170px;
   height: 92px;
@@ -363,6 +456,19 @@ img {
   fill: #2196f3;
   border: 1px solid #2196f3;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .clients__icon {
+    flex-basis: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__icon .clients li:not(:nth-last-child(-n + 1)) {
+    margin-right: 30px;
+  }
 }
 
 /* Подвал */

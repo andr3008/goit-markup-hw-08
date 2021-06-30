@@ -6,12 +6,12 @@ body {
   font-style: normal;
   letter-spacing: 0.03em;
 }
-@media (min-width: 320px) {
-  body {
-    overflow-x: hidden;
-    background-color: tomato;
-  }
-}
+// @media (max-width: 767px) {
+//   body {
+//     overflow-x: hidden;
+//     background-color: tomato;
+//   }
+// }
 
 .list {
   list-style: none;
@@ -21,3 +21,18 @@ body {
 img {
   display: block;
 }
+// @media screen and (min-width: 480px) and (max-width: 767px) {
+//   body {
+//     background-color: yellow;
+//   }
+// }
+// @media screen and (min-width: 1200px) {
+//   body {
+//     background-color: blue;
+//   }
+// }
+// @media screen and (min-width: 768px) and (max-width: 1199px) {
+//   body {
+//     background-color: green;
+//   }
+// }
