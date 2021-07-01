@@ -1,13 +1,13 @@
 /* Шапка */
 .header {
   border-bottom: 1px solid $header-border-color;
-  background-color: brown;
+
+  max-height: 80px;
 
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    min-height: 80px;
   }
 
   &__logo {
@@ -20,6 +20,9 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
 }
 .menu__button .icon__close {
   display: none;
@@ -32,7 +35,10 @@
 }
 /* Навигация */
 .site-nav {
-  //   display: flex;
+  @media screen and(max-width: 767px) {
+    display: none;
+  }
+  display: flex;
   margin-left: 93px;
 
   &__item:nth-child(n + 2) {
@@ -40,7 +46,7 @@
   }
 }
 .site-nav__link {
-  //   display: block;
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   color: $secondary-text-color;
@@ -68,7 +74,7 @@
     position: absolute;
     left: 0;
     bottom: -1px;
-    // display: block;
+    display: block;
     background-color: $accent-color;
     border-radius: 2px;
     width: 100%;
@@ -77,16 +83,24 @@
 }
 /* Контакты */
 .contact {
-  //   display: flex;
+  @media screen and(max-width: 767px) {
+    display: none;
+  }
+
   margin-left: auto;
 
-  &__item:not(last child) {
-    margin-left: 50px;
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    &__item:not(last child) {
+      margin-left: 50px;
+    }
   }
 }
 .contact__link {
-  //   display: flex;
-  //   align-items: center;
+  @media screen and(min-width: 1200px) {
+    display: flex;
+  }
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   color: $primary-text-color;

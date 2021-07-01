@@ -1,14 +1,21 @@
 /* Подвал */
+.footer__container {
+  @media screen and(min-width: 1200px) {
+    display: flex;
+  }
 
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
 .footer {
   background-color: $primary-second-bg-color;
 
   &__contacts {
-    // width: 231px;
+    width: 231px;
   }
 
   &__logo {
-    // display: inline-block;
+    display: inline-block;
     margin-bottom: 20px;
     color: $primary-bg-color;
   }
@@ -90,7 +97,9 @@
   color: $primary-bg-color;
 }
 .subscription__form {
-  //   display: flex;
+  @media screen and(min-width: 1200px) {
+    display: flex;
+  }
 
   width: 570px;
   height: 86px;

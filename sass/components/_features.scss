@@ -1,5 +1,21 @@
 /* Особенности */
-
+.features__section {
+  display: flex;
+  justify-content: space-between;
+  margin: -15px;
+  overflow-y: hidden;
+  @media screen and(min-width: 1200px) {
+  }
+  @media screen and (max-width: 1199px) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .features {
   padding-top: 94px;
   padding-bottom: 0;
@@ -8,6 +24,7 @@
     display: none;
   }
   &__subtitle {
+    text-align: center;
     margin-top: 30px;
     margin-bottom: 10px;
 
@@ -26,7 +43,7 @@
     background-position: center;
 
     margin-bottom: 30px;
-    max-width: 270px;
+    width: 100%;
     height: 120px;
   }
 }
@@ -53,6 +70,7 @@
 
 .features__text {
   // width: 270px;
+
   // height: 75px;
   font-size: 14px;
   line-height: 2;

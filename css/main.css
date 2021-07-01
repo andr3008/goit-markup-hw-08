@@ -16,6 +16,7 @@
 }
 
 .container {
+  max-width: 100%;
   min-width: 320px;
   padding: 0 15px;
   margin-left: auto;
@@ -24,21 +25,19 @@
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
-    overflow-x: hidden;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
-    background-color: yellow;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -104,14 +103,13 @@ img {
 /* Шапка */
 .header {
   border-bottom: 1px solid #ececec;
-  background-color: brown;
+  max-height: 80px;
 }
 
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  min-height: 80px;
 }
 
 .header__logo {
@@ -124,6 +122,12 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
+}
+
+@media screen and (min-width: 767px) {
+  .menu__button {
+    display: none;
+  }
 }
 
 .menu__button .icon__close {
@@ -140,7 +144,14 @@ img {
 
 /* Навигация */
 .site-nav {
+  display: flex;
   margin-left: 93px;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
 }
 
 .site-nav__item:nth-child(n + 2) {
@@ -148,6 +159,7 @@ img {
 }
 
 .site-nav__link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   color: #212121;
@@ -175,6 +187,7 @@ img {
   position: absolute;
   left: 0;
   bottom: -1px;
+  display: block;
   background-color: #2196f3;
   border-radius: 2px;
   width: 100%;
@@ -186,11 +199,23 @@ img {
   margin-left: auto;
 }
 
-.contact__item {
-  margin-left: 50px;
+@media screen and (max-width: 767px) {
+  .contact {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: flex;
+  }
+  .contact__item {
+    margin-left: 50px;
+  }
 }
 
 .contact__link {
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   color: #757575;
@@ -202,6 +227,12 @@ img {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    display: flex;
+  }
 }
 
 .contact__link:hover, .contact__link:focus {
@@ -225,6 +256,9 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Шапка.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .hero--primacy-bg-color {
@@ -245,6 +279,7 @@ img {
 
 .hero__button {
   position: relative;
+  display: inline-block;
   box-sizing: border-box;
   border: 0px solid transparent;
   min-width: 200px;
@@ -270,6 +305,28 @@ img {
 }
 
 /* Особенности */
+.features__section {
+  display: flex;
+  justify-content: space-between;
+  margin: -15px;
+  overflow-y: hidden;
+}
+
+@media screen and (max-width: 1199px) {
+  .features__section {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features__section {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .features {
   padding-top: 94px;
   padding-bottom: 0;
@@ -280,6 +337,7 @@ img {
 }
 
 .features__subtitle {
+  text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;
   color: #212121;
@@ -295,7 +353,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
-  max-width: 270px;
+  width: 100%;
   height: 120px;
 }
 
@@ -353,8 +411,6 @@ img {
 }
 
 .we-do__title {
-  padding-top: 94px;
-  padding-bottom: 94px;
   margin-top: 0;
   margin-bottom: 50px;
   color: #212121;
@@ -362,8 +418,6 @@ img {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -377,7 +431,29 @@ img {
   background: #f5f4fa;
 }
 
+@media screen and (max-width: 767px) {
+  .team__section {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__section {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .team__section {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .team__item {
+  margin-bottom: 30px;
   background-color: #fff;
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -440,8 +516,6 @@ img {
 }
 
 .clients__icon {
-  flex-basis: calc((100% - 4 * 15px) / 2);
-  margin: 15px;
   width: 170px;
   height: 92px;
   fill: #afb1b8;
@@ -458,6 +532,13 @@ img {
   cursor: pointer;
 }
 
+@media screen and (min-width: 480px) {
+  .clients__icon {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .clients__icon {
     flex-basis: calc((100% - 6 * 15px) / 3);
@@ -467,16 +548,34 @@ img {
 
 @media screen and (min-width: 1200px) {
   .clients__icon .clients li:not(:nth-last-child(-n + 1)) {
+    display: inline-flex;
+    align-items: center;
     margin-right: 30px;
   }
 }
 
 /* Подвал */
+.footer__container {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+  }
+}
+
 .footer {
   background-color: #2f303a;
 }
 
+.footer__contacts {
+  width: 231px;
+}
+
 .footer__logo {
+  display: inline-block;
   margin-bottom: 20px;
   color: #fff;
 }
@@ -560,6 +659,12 @@ img {
 .subscription__form {
   width: 570px;
   height: 86px;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription__form {
+    display: flex;
+  }
 }
 
 .subscription__mail {

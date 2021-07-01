@@ -5,10 +5,10 @@
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  //   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  //     url('../images/Шапка.jpg');
-  //   background-repeat: no-repeat;
-  //   background-position: 50% 50%;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/Шапка.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 
   &--primacy-bg-color {
     background-color: $primary-second-bg-color;
@@ -29,7 +29,7 @@
 }
 .hero__button {
   position: relative;
-  //   display: inline-block;
+  display: inline-block;
   box-sizing: border-box;
   border: 0px solid transparent;
   min-width: 200px;

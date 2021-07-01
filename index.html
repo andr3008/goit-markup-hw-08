@@ -24,7 +24,13 @@
       <div class="container header__container">
         <a href="" class="logo"> <span>Web</span><span class="logo header__logo">Studio</span></a>
 
-        <button type="button" class="menu__button is-open" js-open-menu>
+        <button
+          type="button"
+          class="menu__button is-open"
+          js-open-menu
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
             <use
               class="icon__close"
@@ -39,7 +45,7 @@
         <div class="menu__container"></div>
         <!-- Навигация -->
 
-        <!-- <nav>
+        <nav>
           <ul class="site-nav list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link site-nav__link--active">Студия</a>
@@ -49,11 +55,11 @@
             </li>
             <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
           </ul>
-        </nav> -->
+        </nav>
 
         <!-- Контакты -->
 
-        <!-- <ul class="contact list">
+        <ul class="contact list">
           <li class="contact__item">
             <a href="mailto:info@devstudio.com" class="contact__link">
               <svg class="contact__icon" width="16" height="12">
@@ -70,13 +76,13 @@
               +38 096 111 11 11</a
             >
           </li>
-        </ul> -->
+        </ul>
       </div>
     </header>
 
     <!-- Герой -->
 
-    <!-- <main>
+    <main>
       <section class="hero hero--primacy-bg-color">
         <div>
           <h1 class="hero__title">
@@ -84,7 +90,7 @@
             для вашего бизнеса
           </h1>
         </div>
-        <button class="hero__button" type="button" data-modal-open>Заказать услугу</button> -->
+        <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
 
         <!-- Модалка -->
 
@@ -173,7 +179,7 @@
 
       <!-- Особенности -->
 
-      <!-- <section class="features">
+      <section class="features">
         <div class="container">
           <h2 class="features__title">Особенности</h2>
 
@@ -204,7 +210,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Чем мы занимаемся -->
 
@@ -231,7 +237,7 @@
 
       <!-- Наша команда -->
 
-      <!-- <section class="section our-team-bg-color">
+      <section class="section our-team-bg-color">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
 
@@ -348,7 +354,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Постоянные  клиенты -->
 
@@ -394,7 +400,7 @@
 
     <!-- Подвал -->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
         <div class="footer__contacts">
           <a href="./index.html" class="logo">
@@ -454,7 +460,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
