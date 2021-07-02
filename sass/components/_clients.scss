@@ -1,44 +1,76 @@
 /*  Постоянные  клиенты */
 
-.clients {
+// .clients {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-left: -30px;
+//   margin-bottom: -30px;
+
+//   .clients__icon {
+//     width: 170px;
+//     height: 92px;
+//     @media screen and (max-width: 768px) {
+//       flex-basis: calc((100% - 4 * 30px) / 2);
+//       margin-left: 30px;
+//       margin-bottom: 30px;
+//       width: 226px;
+//     }
+
+//     @media screen and (min-width: 768px) {
+//       flex-basis: calc((100% - 6 * 30px) / 3);
+//       margin-left: 30px;
+//       margin-bottom: 30px;
+//       width: 226px;
+//     }
+//     @media screen and(min-width: 1200px) {
+//       flex-basis: calc((100% - 12 * 15px) / 6);
+
+//       width: 170px;
+//       height: 92px;
+//     }
+
+//     fill: $social-icons-color;
+//     border: 1px solid $social-icons-color;
+//     border-radius: 4px;
+
+//     transition-property: fill, border;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover {
+//       fill: $accent-color;
+//       border: 1px solid $accent-color;
+//       cursor: pointer;
+//     }
+//   }
+// }
+.clients__list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: -15px;
+  align-items: center;
+  justify-content: space-between;
 }
-.clients__icon {
+
+.clients__list > li {
   width: 170px;
-  height: 92px;
+  height: 90px;
+}
 
-  fill: $social-icons-color;
-  border: 1px solid $social-icons-color;
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  color: var(--icons-main-color);
+  fill: currentcolor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  transition-property: fill, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover {
-    fill: $accent-color;
-    border: 1px solid $accent-color;
-    cursor: pointer;
-  }
-  @media screen and(min-width: 480px) {
-    flex-basis: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
-  }
-
-  @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 6 * 15px) / 3);
-    margin: 15px;
-  }
-  @media screen and(min-width: 1200px) {
-    .clients li {
-      &:not(:nth-last-child(-n + 1)) {
-        display: inline-flex;
-        align-items: center;
-        margin-right: 30px;
-      }
-    }
-  }
+.clients__link:hover,
+.clients__link:focus {
+  background-color: #ffffff;
+  color: #2196f3;
+  border: 1px solid #2196f3;
 }
