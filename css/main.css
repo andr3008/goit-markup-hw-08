@@ -82,6 +82,8 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Лого */
@@ -152,7 +154,7 @@ img {
   height: 100%;
 }
 
-.menu__container .container {
+.menu__container .container__mob {
   position: relative;
 }
 
