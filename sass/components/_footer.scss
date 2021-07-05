@@ -6,11 +6,31 @@
 
   padding-bottom: 60px;
   padding-top: 60px;
+  @media screen and(max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and(min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 .footer {
   background-color: $primary-second-bg-color;
 
   &__contacts {
+    @media screen and(max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @media screen and(min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     width: 231px;
   }
 
@@ -45,6 +65,19 @@
   }
 }
 .footer__join {
+  @media screen and(max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  @media screen and(min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   margin-top: 12px;
   margin-left: 70px;
 }
@@ -87,9 +120,24 @@
 }
 
 .footer__subscription {
-  margin-left: 93px;
-  margin-top: 12px;
+  @media screen and(max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 
+  @media screen and(min-width: 1200px) {
+    margin-left: 93px;
+    margin-top: 12px;
+  }
+  @media screen and(min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+  }
   @include font();
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -99,14 +147,30 @@
 .subscription__form {
   @media screen and(min-width: 1200px) {
     display: flex;
+    width: 570px;
+    height: 86px;
   }
 
-  width: 570px;
-  height: 86px;
+  @media screen and(max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  @media screen and(min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 }
-
 .subscription__mail {
-  width: 358px;
+  @media screen and(max-width: 767px) {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  width: 450px;
   height: 50px;
   background-color: $primary-second-bg-color;
   margin-top: 20px;

@@ -1,20 +1,96 @@
 /* Герой */
-
 .hero {
-  // max-width: 1600px;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/Шапка.jpg');
+    url('../images/header-img/header-mob-1px.jpg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-size: 480px 400px;
 
-  &--primacy-bg-color {
-    background-color: $primary-second-bg-color;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      text-align: center;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/header-img/header-mob-2px.jpg');
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 480px 400px;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/header-img/header-tab-1px.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 768px 400px;
   }
 
-  &__title {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      text-align: center;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/header-img/header-tab-2px.jpg');
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 768px 400px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/header-img/header-desc-1px.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 1600px 600px;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      text-align: center;
+      padding-top: 200px;
+      padding-bottom: 200px;
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/header-img/header-desc-2px.jpg');
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 1600px 600px;
+    }
+  }
+}
+.hero--primacy-bg-color {
+  background-color: $primary-second-bg-color;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: $primary-bg-color;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
     margin-top: 0;
     margin-bottom: 30px;
 

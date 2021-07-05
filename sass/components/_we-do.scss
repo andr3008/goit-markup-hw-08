@@ -1,11 +1,17 @@
 /* Чем мы занимаемся */
-.we-do__section {
+.we-do__list {
   @media screen and (max-width: 1199px) {
     display: none;
   }
 
   @extend %placeholders;
   position: relative;
+}
+.we__do__section {
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
 }
 
 .we-do__text {

@@ -1,13 +1,16 @@
 /* Шапка */
 .header {
   border-bottom: 1px solid $header-border-color;
-
-  max-height: 80px;
+  height: 60px;
+  padding-top: 10px;
+  @media screen and (min-width: 768px) {
+    height: 80px;
+    padding-top: 0;
+  }
 
   &__container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
   }
 
   &__logo {
@@ -20,10 +23,17 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  // @media screen and (min-width: 767px) {
-  //   display: none;
-  // }
+  cursor: pointer;
+  fill: currentColor;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
+.menu__open:hover,
+.menu__open:focus {
+  color: $accent-color;
+}
+
 .menu__open .icon__close {
   display: none;
 }
@@ -48,6 +58,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  padding-left: 40px;
   .container__mob {
     position: relative;
   }
@@ -55,8 +66,14 @@
     position: absolute;
     border: none;
     background-color: transparent;
-    right: 15px;
+    right: 10px;
     top: 10px;
+    cursor: pointer;
+    fill: currentColor;
+  }
+  .menu__close:hover,
+  .menu__close:focus {
+    color: $accent-color;
   }
 }
 .mobile__menu__item {
@@ -77,14 +94,25 @@
   letter-spacing: 0.02em;
 
   color: #212121;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    text-decoration: none;
+  }
+
+  &--active {
+    position: relative;
+    color: $accent-color;
+  }
 }
+
 .mobile__contacts__tel {
   text-decoration: none;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: rgba(33, 150, 243, 1);
 }
 .mobile__contacts__mail {
   text-decoration: none;
@@ -97,6 +125,12 @@
 }
 .mobile__media {
   display: flex;
+  margin-bottom: 48px;
+}
+.mobile__media__item:not(:last-child) {
+  border-right: 1px solid #757575;
+  padding-right: 10px;
+  margin-right: 10px;
 }
 .mobile__media__link {
   font-weight: 500;
@@ -105,7 +139,6 @@
   text-decoration: none;
   letter-spacing: 0.02em;
   color: #2196f3;
-  border-right: 1px solid #757575;
 }
 .menu__container.is-hidden {
   opacity: 0;

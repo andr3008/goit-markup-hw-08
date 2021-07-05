@@ -24,8 +24,6 @@
       <div class="container header__container">
         <a href="" class="logo"> <span>Web</span><span class="logo header__logo">Studio</span></a>
 
-        
-        
         <!-- Навигация -->
 
         <nav>
@@ -61,7 +59,6 @@
           </li>
         </ul>
         <button type="button" class="menu__open">
-          
           <svg width="40px" height="40px" aria-label="Открытие мобильного меню">
             <use
               class="icon__menu"
@@ -70,9 +67,9 @@
           </svg>
         </button>
       </div>
-      
-        <div class="container__mob">
-          <div class="menu__container is-hidden">
+
+      <div class="container__mob">
+        <div class="menu__container is-hidden">
           <button type="button" class="menu__close">
             <svg width="40px" height="40px" aria-label="Закрытие мобильного меню">
               <use
@@ -85,7 +82,7 @@
           <nav>
             <ul class="mobile__menu list">
               <li class="mobile__menu__item">
-                <a href="" class="mobile__menu__link link">Студия</a>
+                <a href="" class="mobile__menu__link mobile__menu__link--active link">Студия</a>
               </li>
               <li class="mobile__menu__item">
                 <a href="" class="mobile__menu__link link">Портфолио</a>
@@ -94,9 +91,9 @@
                 <a href="" class="mobile__menu__link link">Контакты</a>
               </li>
             </ul>
-            </nav>
-           <div class="mobile__nav__bottom">
-              <ul class="mobile__contacts list">
+          </nav>
+          <div class="mobile__nav__bottom">
+            <ul class="mobile__contacts list">
               <li class="mobile__contacts__item">
                 <a href="" class="mobile__contacts__tel link">+38 096 111 11 11</a>
               </li>
@@ -118,16 +115,14 @@
                 <a href="" class="mobile__media__link link">LinkedIn</a>
               </li>
             </ul>
-           </div>
-          
+          </div>
         </div>
-
-        </div>
+      </div>
     </header>
 
     <!-- Герой -->
 
-    <!-- <main>
+    <main>
       <section class="hero hero--primacy-bg-color">
         <div>
           <h1 class="hero__title">
@@ -135,11 +130,9 @@
             для вашего бизнеса
           </h1>
         </div>
-        <button class="hero__button" type="button" data-modal-open>Заказать услугу</button> -->
+        <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
 
-        <!-- Модалка -->
-
-        <!-- <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button class="modal__btn" data-modal-close>
               <svg width="11" height="11">
@@ -219,7 +212,7 @@
               </label>
             </form>
           </div>
-        </div> -->
+        </div>
       </section>
 
       <!-- Особенности -->
@@ -231,7 +224,7 @@
           <ul class="features__section list">
             <li class="features__item">
               <div class="features-icons">
-                <svg class="icons" width="70px" height="70px">
+                <svg class="icons">
                   <use href="./images/great-icons/symbol-defs-features.svg#icon-antenna-1-1"></use>
                 </svg>
               </div>
@@ -243,7 +236,7 @@
             </li>
             <li class="features__item">
               <div class="features-icons">
-                <svg class="icons" width="70px" height="70px">
+                <svg class="icons">
                   <use href="./images/great-icons/symbol-defs-features.svg#icon-clock-1-1"></use>
                 </svg>
               </div>
@@ -255,7 +248,7 @@
             </li>
             <li class="features__item">
               <div class="features-icons">
-                <svg class="icons" width="70px" height="70px">
+                <svg class="icons">
                   <use href="./images/great-icons/symbol-defs-features.svg#icon-diagram-1-1"></use>
                 </svg>
               </div>
@@ -267,7 +260,7 @@
             </li>
             <li class="features__item">
               <div class="features-icons">
-                <svg class="icons" width="70px" height="70px">
+                <svg class="icons">
                   <use
                     href="./images/great-icons/symbol-defs-features.svg#icon-astronaut-1-1"
                   ></use>
@@ -285,21 +278,21 @@
 
       <!-- Чем мы занимаемся -->
 
-      <section class="section">
+      <section class="we__do__section">
         <div class="container">
           <h2 class="we-do__title">Чем мы занимаемся</h2>
 
-          <ul class="we-do__section list">
+          <ul class="we-do__list list">
             <li class="we-do__item">
-              <img src="./images/box1.png" alt="Программирование" width="370" />
+              <img src="./images/box1.png" alt="Программирование" />
               <p class="we-do__text">Десктопные приложения</p>
             </li>
             <li class="we-do__item">
-              <img src="./images/box2.png" alt="UI Дизайн" width="370" />
+              <img src="./images/box2.png" alt="UI Дизайн" />
               <p class="we-do__text">Мобильные приложения</p>
             </li>
             <li class="we-do__item">
-              <img src="./images/box3.png" alt="Продукт Дизайн" width="370" />
+              <img src="./images/box3.png" alt="Продукт Дизайн" />
               <p class="we-do__text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -336,7 +329,7 @@
                   "
                   media="(min-width: 480px)"
                 />
-                <img src="./images/img3.jpg" alt="Фото Игоря"  />
+                <img src="./images/img3.jpg" alt="Фото Игоря" />
               </picture>
 
               <h3 class="team__name">Игорь Демьяненко</h3>
@@ -366,7 +359,7 @@
               </ul>
             </li>
             <li class="team__item">
-               <picture>
+              <picture>
                 <source
                   srcset="
                     ./images/our-team-img/img-our-team-desc-2-1px.jpg,
@@ -388,7 +381,7 @@
                   "
                   media="(min-width: 480px)"
                 />
-                <img src="./images/img2.jpg" alt="Фото Игоря"  />
+                <img src="./images/img2.jpg" alt="Фото Игоря" />
               </picture>
               <h3 class="team__name">Ольга Репина</h3>
               <p class="team__profession">Frontend Developer</p>
@@ -417,7 +410,7 @@
             </li>
 
             <li class="team__item">
-               <picture>
+              <picture>
                 <source
                   srcset="
                     ./images/our-team-img/img-our-team-desc-3-1px.jpg,
@@ -467,7 +460,7 @@
               </ul>
             </li>
             <li class="team__item">
-               <picture>
+              <picture>
                 <source
                   srcset="
                     ./images/our-team-img/img-our-team-desc-4-1px.jpg,
@@ -623,21 +616,20 @@
         <div class="footer__subscription">
           <span>Подпишитесь на рассылку</span>
           <form class="subscription__form">
-            <label for="email">
-              <input
-                class="subscription__mail"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-                id="email"
-              />
-            </label>
+            <input
+              class="subscription__mail"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              id="email"
+            />
+
             <button class="subscription__btn" type="submit">Подписаться</button>
           </form>
         </div>
       </div>
     </footer>
-  
+
     <script src="js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>

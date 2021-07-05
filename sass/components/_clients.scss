@@ -11,12 +11,12 @@
   flex-basis: calc((100% - 60px) / 2);
   margin-bottom: 30px;
   margin-left: 30px;
-  width: 100%;
+  width: 170px;
   height: 92px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $social-icons-color;
+
   border: 1px solid $social-icons-color;
   border-radius: 4px;
   transition-property: fill, border;
