@@ -12,6 +12,10 @@
     padding-bottom: 0;
     padding-top: 0;
   }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .we-do__text {

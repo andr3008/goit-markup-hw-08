@@ -51,7 +51,7 @@
   width: 100vw;
   height: 100vh;
   padding-top: 48px;
-  padding-bottom: 48px;
+
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -59,6 +59,7 @@
   justify-content: space-between;
   height: 100%;
   padding-left: 40px;
+  z-index: 55;
   .container__mob {
     position: relative;
   }
@@ -152,6 +153,10 @@
   @media screen and(max-width: 767px) {
     display: none;
   }
+  @media screen and(min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    margin-left: 88px;
+  }
   display: flex;
   margin-left: 93px;
 
@@ -207,6 +212,12 @@
     display: flex;
     &__item:not(last child) {
       margin-left: 50px;
+    }
+  }
+  @media screen and(min-width: 768px) and (max-width: 1199px) {
+    &__item {
+      padding-bottom: 5px;
+      padding-top: 5px;
     }
   }
 }
