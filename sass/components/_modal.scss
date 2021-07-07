@@ -24,26 +24,28 @@
   }
 }
 .modal {
-  @media screen and(max-width: 767px) {
-    width: 450px;
-    height: 609px;
-    margin-top: 93px;
-    margin-left: auto;
-    margin-right: auto;
+  @media screen and(max-width: 479px) {
+    width: 100vw;
+    height: 100vh;
+    
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 40px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  @media screen and(min-width: 768px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
+    position: absolute;
     max-width: 450px;
     height: 609px;
-    margin-top: 209px;
-    margin-left: auto;
-    margin-right: auto;
+
+    top: 50%;
+    left: 50%;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 40px;
+
+    transform: translate(-50%, -50%) scale(1);
+
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   @media screen and(min-width: 1200px) {
@@ -64,11 +66,10 @@
   border-radius: 4px;
 
   &__btn {
-    @media screen and(max-width: 767px) {
-      margin-top: 8px;
-      margin-left: 378px;
+    @media screen and(max-width: 479px) {
+      margin-top: 10px;
     }
-    @media screen and(min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
       margin-top: 8px;
       margin-left: 378px;
     }

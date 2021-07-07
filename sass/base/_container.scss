@@ -1,26 +1,9 @@
-html,
-body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-// *,
-// *::after,
-// *::before {
-//   box-sizing: border-box;
-// }
-
 .container {
   width: 100%;
-
+  min-width: 320px;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-
-  // @media (min-width: 320px) {
-  //   overflow-x: hidden;
-  // }
 
   @media screen and(min-width: 480px) {
     width: 480px;
